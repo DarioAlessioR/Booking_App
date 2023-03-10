@@ -16,16 +16,22 @@ The style has been made only with Tailwind.
 
 ## Setup
 
-1. You would need to have a computer with ruby and ruby on rails installed to run it.
+1. You would need to have a computer with Ruby, Ruby on Rails and Postgresql installed to run it.
 2. Follow these steps on your console to properly clone this repository on your desktop:
 
 ```
-$ git clone 'repo_path'
-$ cd 'repo_name'
+$ git clone https://github.com/DarioAlessioR/Booking_App.git
+$ cd Booking_App
 $ code .
-```
 
-3. At the command line, run `rails s` to run the app.
+$ In the root directory run: gem install bundler
+
+$ Then run: bundle install
+
+$ Run ruby app in the Command Line: rails s
+
+$ To run test cases in the command line type: rspec
+```
 
 ## Author
 
