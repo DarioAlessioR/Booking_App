@@ -7,6 +7,10 @@ The style has been made only with Tailwind.
 
 ![pic1](app/assets/images/pic1.png)
 
+![pic2](app/assets/images/pic2.png)
+
+![pic3](app/assets/images/pic3.png)
+
 ## Project Requirements
 
 Build a simple appointment application using Hotwire from rails.
