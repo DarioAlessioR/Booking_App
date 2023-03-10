@@ -58,10 +58,11 @@ $ Then run: bundle install
 $ Run ruby app in the Command Line: rails s
 
 $ To run test cases in the Command Line type: rspec
+```
 This is a view of the terminal after running rspec:
 ![pic4](app/assets/images/pic4.png)
 
-```
+
 
 ## Author
 
