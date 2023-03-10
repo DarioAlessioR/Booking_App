@@ -2,17 +2,16 @@
 <div class="md:container md:mx-auto p-4 my-2">
 <p class="text-3xl py-4"><strong>Welcome to the Appointments Maker</strong></p>
 
-  <%= link_to "New appointment", new_appointment_path %>
+  <%= link_to "New appointment", new_appointment_path, data: { turbo_frame: dom_id(Appointment.new) } %>
+
+  <%= turbo_frame_tag Appointment.new %>
 
 <div id="appointments">
+  <%= turbo_frame_tag "appointments" do %>
   <% @appointments.each do |appointment| %>
     <%= render appointment %>
+  <% end %>
    
-   <!-- <p>
-      <%= link_to "Show this appointment", appointment %>
-    </p>
-   -->
-
   <% end %>
 </div>
 

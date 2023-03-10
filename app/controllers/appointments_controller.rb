@@ -26,6 +26,7 @@ class AppointmentsController < ApplicationController
     respond_to do |format|
       if @appointment.save
         format.html { redirect_to appointment_url(@appointment), notice: "Appointment was successfully created." }
+        format.turbo_stream
         format.json { render :show, status: :created, location: @appointment }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -53,6 +54,7 @@ class AppointmentsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to appointments_url, notice: "Appointment was successfully destroyed." }
+      format.turbo_stream
       format.json { head :no_content }
     end
   end

@@ -1,6 +1,8 @@
 <h1>New appointment</h1>
 
+<%= turbo_frame_tag Appointment.new do %>
   <%= render "form", appointment: @appointment %>
+<% end %>
 
 <br>
 
