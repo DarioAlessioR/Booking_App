@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="flex flex-row">
+  <div class="flex flex-row my-2">
     <%= form.label :name, class:"px-5 w-24", style: "display: block" %>
     <%= form.text_field :name, class:"px-5 border-2" %>
   </div>
 
-  <div class="flex flex-row">
+  <div class="flex flex-row my-2">
     <%= form.label :month, class:"px-5 w-24", style: "display: block" %>
     <%= form.text_field :month, class:"px-5 border-2" %>
   </div>
 
-  <div class="flex flex-row">
+  <div class="flex flex-row my-2">
     <%= form.label :day, class:"px-5 w-24", style: "display: block" %>
     <%= form.number_field :day, class:"px-5 border-2" %>
   </div>
 
-  <div class="flex flex-row">
+  <div class="flex flex-row my-2">
     <%= form.label :service, class:"px-5 w-24", style: "display: block" %>
     <%= form.text_field :service, class:"px-5 border-2" %>
   </div>
 
-  <div class="text-blue-700 bg-blue-200 w-fit my-4">
+  <div class="text-blue-700 bg-blue-200 w-fit my-4 hover:pointer">
     <%= form.submit %>
   </div>
 <% end %>
