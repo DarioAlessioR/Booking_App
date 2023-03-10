@@ -21,7 +21,9 @@ The style has been made only with Tailwind.
 
 ```
 $ git clone https://github.com/DarioAlessioR/Booking_App.git
+
 $ cd Booking_App
+
 $ code .
 
 $ In the root directory run: gem install bundler
