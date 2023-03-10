@@ -1,9 +1,21 @@
 # Booking App
 
-> This is Ruby on Rails SPA application that lets you create appointments. It uses
+This is Ruby on Rails SPA that lets you create appointments. It uses
 Hotwire Turbo Frame and Turbo Stream to render all views in the root directory only.
 
 The style has been made only with Tailwind.
+
+## Project Requirements
+
+Build a simple appointment application using Hotwire from rails.
+
+ 1: The app should be on one page. 
+ 
+ 2: Use tailwind css or bulma for styling. 
+ 
+ 3: User should be able pick a date and book an appointment. 
+ 
+ The appointment should appear on the page immediately without a full page refresh. 
 
 ## Built With
 
