@@ -5,11 +5,18 @@ Hotwire Turbo Frame and Turbo Stream to render all views in the root directory o
 
 The style has been made only with Tailwind.
 
+This is a view if the index:
 ![pic1](app/assets/images/pic1.png)
 
+
+This is a view of the New in the index:
 ![pic2](app/assets/images/pic2.png)
 
+
+This is a view of the Edit in the index:
 ![pic3](app/assets/images/pic3.png)
+
+All the app functioning happens in the root (Localhost:3000 in the case of local)
 
 ## Project Requirements
 
