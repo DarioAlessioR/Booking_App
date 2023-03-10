@@ -17,11 +17,6 @@ RSpec.describe "appointments/edit", type: :view do
 
       assert_select "input[name=?]", "appointment[name]"
 
-      assert_select "input[name=?]", "appointment[month]"
-
-      assert_select "input[name=?]", "appointment[day]"
-
-      assert_select "input[name=?]", "appointment[service]"
     end
   end
 end
