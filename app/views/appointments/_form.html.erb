@@ -1,0 +1,37 @@
+<%= form_with(model: appointment) do |form| %>
+  <% if appointment.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(appointment.errors.count, "error") %> prohibited this appointment from being saved:</h2>
+
+      <ul>
+        <% appointment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="flex flex-row my-2">
+    <%= form.label :name, class:"px-5 w-24", style: "display: block" %>
+    <%= form.text_field :name, class:"px-5 border-2" %>
+  </div>
+
+  <div class="flex flex-row my-2">
+    <%= form.label :month, class:"px-5 w-24", style: "display: block" %>
+    <%= form.select :month, options_for_select(["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]), class:"px-5 border-2" %>
+  </div>
+
+  <div class="flex flex-row my-2">
+    <%= form.label :day, class:"px-5 w-24", style: "display: block" %>
+    <%= form.select :day, options_for_select((1..31).to_a), class:"px-5 border-2" %>
+  </div>
+
+  <div class="flex flex-row my-2">
+    <%= form.label :service, class:"px-5 w-24", style: "display: block" %>
+    <%= form.select :service, options_for_select(["", "Car wash", "Change tires", "Review oil level", "Change motor oil", "Review emissions", "Fine tune motor", "Fix car body", "Scheduled maintenance", "Polish car body", "Fix computer", "Add refrigerator", "Clean seats"]), class:"px-5 border-2" %>
+  </div>
+
+  <div class="text-blue-700 bg-blue-200 w-fit my-4 hover:pointer px-1 w-fit align-middle rounded-md">
+    <%= form.submit %>
+  </div>
+<% end %>

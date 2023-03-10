@@ -1,0 +1,12 @@
+<h1>Editing appointment</h1>
+
+<%= turbo_frame_tag dom_id(@appointment) do %>
+  <%= render "form", appointment: @appointment %>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Show this appointment", @appointment %> |
+  <%= link_to "Back to appointments", appointments_path %>
+</div>

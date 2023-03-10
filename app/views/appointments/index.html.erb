@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+<div class="md:container md:mx-auto p-4 my-2">
+<p class="text-3xl py-4"><strong>Welcome to the Car Service Appointments Maker</strong></p>
+
+  <%= link_to "Click to make a new appointment",
+    new_appointment_path,
+    class: "text-blue-700 bg-blue-200 w-fit p-1 rounded-md my-5",
+    data: { turbo_frame: dom_id(Appointment.new) } 
+  %>
+
+  <%= turbo_frame_tag Appointment.new %>
+
+<div id="appointments">
+  <%= turbo_frame_tag "appointments" do %>
+  <% @appointments.each do |appointment| %>
+    <%= render appointment %>
+  <% end %>
+   
+  <% end %>
+</div>
+
+
+</div>
