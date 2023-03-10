@@ -5,6 +5,9 @@ Hotwire Turbo Frame and Turbo Stream to render all views in the root directory o
 
 The style has been made only with Tailwind.
 
+![](images-readme/pic1.png)
+
+
 ## Project Requirements
 
 Build a simple appointment application using Hotwire from rails.
