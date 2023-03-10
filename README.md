@@ -32,7 +32,7 @@ $ Then run: bundle install
 
 $ Run ruby app in the Command Line: rails s
 
-$ To run test cases in the command line type: rspec
+$ To run test cases in the Command Line type: rspec
 ```
 
 ## Author
