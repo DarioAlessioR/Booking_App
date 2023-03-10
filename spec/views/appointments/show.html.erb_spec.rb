@@ -1,16 +1,16 @@
 require 'rails_helper'
 
-RSpec.describe "appointments/show", type: :view do
+RSpec.describe 'appointments/show', type: :view do
   before(:each) do
     @appointment = assign(:appointment, Appointment.create!(
-      name: "Name",
-      month: "Month",
-      day: 2,
-      service: "Service"
-    ))
+                                          name: 'Name',
+                                          month: 'Month',
+                                          day: 2,
+                                          service: 'Service'
+                                        ))
   end
 
-  it "renders attributes in <p>" do
+  it 'renders attributes in <p>' do
     render
     expect(rendered).to match(/Name/)
     expect(rendered).to match(/Month/)
