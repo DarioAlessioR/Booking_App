@@ -19,7 +19,6 @@ RSpec.describe '/appointments', type: :request do
   valid_attributes = { 'name' => 'PEpe', 'month' => 'January', 'day' => 1, 'service' => 'Fix car' }
   invalid_attributes = { 'month' => 'xxx', 'day' => 122_222, 'service' => '55555' }
 
-
   describe 'GET /index' do
     it 'renders a successful response' do
       Appointment.create! valid_attributes
