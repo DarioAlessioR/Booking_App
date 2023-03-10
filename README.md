@@ -5,7 +5,7 @@ Hotwire Turbo Frame and Turbo Stream to render all views in the root directory o
 
 The style has been made only with Tailwind.
 
-![](assets/images/pic1.png)
+![](/Booking_App/app/assets/images/pic1.png)
 
 ## Project Requirements
 
