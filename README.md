@@ -62,6 +62,11 @@ $ To run test cases in the Command Line type: rspec
 This is a view of the terminal after running rspec:
 ![pic4](app/assets/images/pic4.png)
 
+## Live Demo
+
+The app is deployed on Render free service. Please, allow a few seconds for it to load, as the Render's free service is slow by default.
+
+Visit the live demo at:  https://booking-app2-18g6.onrender.com
 
 
 ## Author
