@@ -5,7 +5,7 @@ Hotwire Turbo Frame and Turbo Stream to render all views in the root directory o
 
 The style has been made only with Tailwind.
 
-![pic1](./images/pic1.png)
+![pic1](pic1.png)
 
 ## Project Requirements
 
