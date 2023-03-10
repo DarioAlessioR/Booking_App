@@ -17,11 +17,12 @@ RSpec.describe "appointments/new", type: :view do
 
       assert_select "input[name=?]", "appointment[name]"
 
-      assert_select "input[name=?]", "appointment[month]"
+      assert_select "select[name=?]", "appointment[month]"
 
-      assert_select "input[name=?]", "appointment[day]"
+      assert_select "select[name=?]", "appointment[day]"
 
-      assert_select "input[name=?]", "appointment[service]"
+      assert_select "select[name=?]", "appointment[service]"
+
     end
   end
 end

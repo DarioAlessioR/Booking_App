@@ -5,24 +5,24 @@ RSpec.describe "appointments/index", type: :view do
     assign(:appointments, [
       Appointment.create!(
         name: "Name",
-        month: "Month",
+        month: "April",
         day: 2,
-        service: "Service"
+        service: "Fix car"
       ),
       Appointment.create!(
         name: "Name",
-        month: "Month",
+        month: "April",
         day: 2,
-        service: "Service"
+        service: "Fix car"
       )
     ])
   end
 
   it "renders a list of appointments" do
     render
-    assert_select "tr>td", text: "Name".to_s, count: 2
-    assert_select "tr>td", text: "Month".to_s, count: 2
-    assert_select "tr>td", text: 2.to_s, count: 2
-    assert_select "tr>td", text: "Service".to_s, count: 2
+    assert_select "strong", text: "Name".to_s, count: 2
+    assert_select "strong", text: "April".to_s, count: 2
+    assert_select "strong", text: 2.to_s, count: 2
+    assert_select "strong", text: "Fix car".to_s, count: 2
   end
 end

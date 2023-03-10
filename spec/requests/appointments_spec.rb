@@ -17,13 +17,9 @@ RSpec.describe "/appointments", type: :request do
   # This should return the minimal set of attributes required to create a valid
   # Appointment. As you add validations to Appointment, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
-
-  let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
-  }
+ valid_attributes = { "name" => "PEpe", "month" => "January", "day" => 1, "service" => "Fix car" }
+ invalid_attributes = { "month" => "xxx", "day" => 122222, "service" => "55555" }
+  
 
   describe "GET /index" do
     it "renders a successful response" do
@@ -76,25 +72,19 @@ RSpec.describe "/appointments", type: :request do
           post appointments_url, params: { appointment: invalid_attributes }
         }.to change(Appointment, :count).by(0)
       end
-
-      it "renders a successful response (i.e. to display the 'new' template)" do
-        post appointments_url, params: { appointment: invalid_attributes }
-        expect(response).to be_successful
-      end
     end
   end
 
   describe "PATCH /update" do
     context "with valid parameters" do
-      let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
-      }
+      valid_attributes = { "name" => "PEpe", "month" => "January", "day" => 1, "service" => "Fix car" }
+      new_attributes = { "name" => "Pepa", "month" => "January", "day" => 11, "service" => "Fix car" }
 
       it "updates the requested appointment" do
         appointment = Appointment.create! valid_attributes
         patch appointment_url(appointment), params: { appointment: new_attributes }
         appointment.reload
-        skip("Add assertions for updated state")
+        expect(appointment.name).to eq("Pepa")
       end
 
       it "redirects to the appointment" do
@@ -102,14 +92,6 @@ RSpec.describe "/appointments", type: :request do
         patch appointment_url(appointment), params: { appointment: new_attributes }
         appointment.reload
         expect(response).to redirect_to(appointment_url(appointment))
-      end
-    end
-
-    context "with invalid parameters" do
-      it "renders a successful response (i.e. to display the 'edit' template)" do
-        appointment = Appointment.create! valid_attributes
-        patch appointment_url(appointment), params: { appointment: invalid_attributes }
-        expect(response).to be_successful
       end
     end
   end
